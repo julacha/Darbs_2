@@ -13,7 +13,8 @@ height: 95vh;
 .hero{
     grid-row:3/4;}
 .content{
-    grid-row:4/7;
+    grid-row-start:4;
+    grid-row-end:span 3;
     }
 .article_feat{
     grid-row:4/5;  
