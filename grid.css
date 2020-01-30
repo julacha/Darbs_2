@@ -1,7 +1,7 @@
 
 #outer-container {
 display:grid;
-grid-template-rows: 120px 1fr 3fr 1fr 120px;
+grid-template-rows: 120px 1fr 3fr 1fr;
 grid-template-columns: 1fr;
 grid-gap: 5px;
 background:rgb(122, 213, 255);
@@ -68,11 +68,8 @@ button{
     #outer-container {
         grid-template-columns: 100px 1fr 100px;
     }
-    .hero{grid-column: 1/4; 
-    }
     #inner-grid2{
-        grid-column: 1/4;
-        grid-row:3/3;
-     
-}
+       
+       grid-column: 1/4;
+    }
 }
