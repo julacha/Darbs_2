@@ -11,10 +11,11 @@ height: 95vh;
         display:grid;
         grid-template-rows: 1fr 1fr 1fr;
         background-color: rgb(255, 0, 200);
-        height: 60vh;
+        height: 50vh;
     }
 .header{
-    grid-row:1/2; 
+    grid-row:1/2;
+    height: 20vh;
 }
 .hero{
     grid-row:2/3;}
