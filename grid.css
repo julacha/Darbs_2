@@ -28,6 +28,17 @@ grid-template-areas:
 .header{
     grid-area: header;
 }
+h1{
+    font-size: 18px;
+    text-transform:uppercase;
+    color:white;
+    text-align: center;
+}  
+.second_row{
+    display:block;
+    display:flex;
+    justify-content:space-between;
+}
 .nav {
     font-size:10px;
     text-transform:uppercase;
@@ -46,7 +57,6 @@ grid-template-areas:
         align-self:end;
     }
 .hero{
-    
     grid-area: hero;
     text-transform:uppercase;
     color:white;
@@ -88,4 +98,3 @@ button{
 "footer"
 }
     }
- }
