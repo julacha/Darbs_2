@@ -1,7 +1,7 @@
 
 #outer-container {
 display:grid;
-grid-template-rows: 1fr 1fr 1fr 3fr 1fr 30px;
+grid-template-rows: 1fr 1fr 1fr 3fr 1fr 1fr 30px;
 grid-template-columns: 1fr;
 grid-gap: 5px;
 height: 95vh;
@@ -12,6 +12,7 @@ grid-template-areas:
 "header"
 "header"
 "hero"
+"advert"
 "content"
 "sidebar"
 "footer"
@@ -62,6 +63,10 @@ h1{
     color:white;
     width:700;
     text-align: center;
+}
+.advert{
+    grid-area: advert;
+    display:none;
 }
 button{
     border-radius:10px ;
@@ -119,16 +124,20 @@ button{
         grid-template-rows: 1fr 1fr 2fr 30px;
         grid-template-areas:
 "header header header header"
-"hero hero hero adv"
+"hero hero hero advert"
 "content content content sidebar"
 "footer footer footer footer";
 }
 .sidebar{
-   
+    color: rgb(223, 202, 202);
+}
+.advert{
+    display:block;
+    color: darkred;
 }
 #inner-grid{ 
     grid-template-rows: 1fr;
-    grid-template-column: 1fr;
+    grid-template-columns: 1fr 1fr;
         height: 40vh;
         grid-template-areas:
         "article_feat article_list";   
