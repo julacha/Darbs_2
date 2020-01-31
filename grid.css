@@ -113,3 +113,24 @@ button{
         "article_list article_list article_list";
     }
 }
+@media (min-width: 992px){
+    #outer-container {
+        grid-template-columns: 150px 1fr 1fr 150px;
+        grid-template-rows: 1fr 1fr 2fr 30px;
+        grid-template-areas:
+"header header header header"
+"hero hero hero adv"
+"content content content sidebar"
+"footer footer footer footer";
+}
+.sidebar{
+   
+}
+#inner-grid{ 
+    grid-template-rows: 1fr;
+    grid-template-column: 1fr;
+        height: 40vh;
+        grid-template-areas:
+        "article_feat article_list";
+    }
+}
