@@ -131,6 +131,8 @@ button{
     grid-template-column: 1fr;
         height: 40vh;
         grid-template-areas:
-        "article_feat article_list";
+        "article_feat article_list";   
+    }
+    .adv{display:none;
     }
 }
