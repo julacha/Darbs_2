@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
 
 #outer-container {
 display:grid;
+border-color: white;
 grid-template-rows: 1fr 1fr 1fr 3fr 1fr 1fr 30px;
 grid-template-columns: 1fr;
 grid-gap: 5px;
@@ -20,7 +24,8 @@ grid-template-areas:
 #inner-grid{
         display:grid;
         grid-template-rows: 1fr 1fr 1fr;
-        height: 40vh;
+        height: 45vh;
+        grid-gap: 5px;
         grid-template-areas:
         "article_feat article_feat article_feat"
         "adv adv adv"
@@ -28,6 +33,7 @@ grid-template-areas:
     }
 .header{
     grid-area: header;
+    background-color: rgba(252, 184, 106, 0.836);
 }
 h1{
     font-size: 18px;
@@ -39,6 +45,7 @@ h1{
     display:block;
     display:flex;
     justify-content:space-between;
+    background-color: rgba(252, 184, 106, 0.836);
 }
 .nav {
     font-size:10px;
@@ -63,43 +70,55 @@ h1{
     color:white;
     width:700;
     text-align: center;
+    background-color: rgba(252, 184, 106, 0.836);
 }
 .advert{
     grid-area: advert;
     display:none;
+    background-color: rgba(252, 184, 106, 0.836);
 }
 button{
     border-radius:10px ;
 }
 .content{
     grid-area: content;
-    height: 40vh;
+    height: 45vh;
     color:white;
     text-align: center;
+    
 }
 
 .article_feat{
    grid-area: article_feat;
+   height: 45vh;
+   background-color: rgba(252, 184, 106, 0.836);
 }
 .adv{
   grid-area: adv;
+  height: 45vh;
+  background-color: rgba(252, 184, 106, 0.836);
 }
 .article_list{
  grid-area:article_list;
+ height: 45vh;
+ background-color: rgba(252, 184, 106, 0.836);
 }
 .sidebar{
     grid-area: sidebar;
     display:none;
+    background-color: rgba(252, 184, 106, 0.836);
 }
 .footer{
     grid-area: footer;
     text-align: center;
+    background-color: rgba(252, 184, 106, 0.836);
 }
 @media (min-width: 576px){
     #outer-container {
         grid-template-columns: 100px 1fr 100px;
         grid-template-rows: 1fr 70px 2fr 30px 30px;
-        grid-template-areas:
+        background-image: none;
+               grid-template-areas:
 "header header header"
 "hero hero hero"
 "content content content"
@@ -109,7 +128,7 @@ button{
 .sidebar{
     display:inline-flex;
     height: 8vh;
-
+    background-color: rgba(252, 184, 106, 0.836);
 }
 #inner-grid{  
         height: 40vh;
@@ -130,10 +149,13 @@ button{
 }
 .sidebar{
     color: rgb(223, 202, 202);
+    background-color: rgba(252, 184, 106, 0.836);
 }
 .advert{
     display:block;
     color: darkred;
+    background-color: rgba(252, 184, 106, 0.836);
+
 }
 #inner-grid{ 
     grid-template-rows: 1fr;
