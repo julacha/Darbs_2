@@ -21,9 +21,9 @@ grid-template-areas:
         grid-template-rows: 1fr 1fr 1fr;
         height: 40vh;
         grid-template-areas:
-        "article_feat"
-        "adv"
-        "article_list"
+        "article_feat article_feat article_feat"
+        "adv adv adv"
+        "article_list article_list article_list";
     }
 .header{
     grid-area: header;
@@ -85,7 +85,6 @@ button{
 .sidebar{
     grid-area: sidebar;
     display:none;
- 
 }
 .footer{
     grid-area: footer;
@@ -94,11 +93,23 @@ button{
 @media (min-width: 576px){
     #outer-container {
         grid-template-columns: 100px 1fr 100px;
+        grid-template-rows: 1fr 70px 2fr 30px 30px;
         grid-template-areas:
 "header header header"
-"hero hero ."
+"hero hero hero"
 "content content content"
-"sidebar"
-"footer"
+"sidebar sidebar sidebar"
+"footer footer footer";
 }
+.sidebar{
+    display:inline-flex;
+    height: 8vh;
+
+}
+#inner-grid{  
+        height: 40vh;
+        grid-template-areas:
+        "article_feat article_feat adv"
+        "article_list article_list article_list";
     }
+}
