@@ -1,7 +1,7 @@
 
 #outer-container {
 display:grid;
-grid-template-rows: 1fr 1fr 1fr 3fr 1fr 50px;
+grid-template-rows: 1fr 1fr 1fr 3fr 1fr 30px;
 grid-template-columns: 1fr;
 grid-gap: 5px;
 height: 95vh;
@@ -16,15 +16,15 @@ grid-template-areas:
 "sidebar"
 "footer"
 }
-/*#inner-grid{
+#inner-grid{
         display:grid;
         grid-template-rows: 1fr 1fr 1fr;
-        height: 50vh;
+        height: 40vh;
         grid-template-areas:
         "article_feat"
         "adv"
         "article_list"
-    }*/
+    }
 .header{
     grid-area: header;
 }
@@ -68,10 +68,12 @@ button{
 }
 .content{
     grid-area: content;
-  
+    height: 40vh;
+    color:white;
+    text-align: center;
 }
 
-/*.article_feat{
+.article_feat{
    grid-area: article_feat;
 }
 .adv{
@@ -79,13 +81,15 @@ button{
 }
 .article_list{
  grid-area:article_list;
-}*/
+}
 .sidebar{
     grid-area: sidebar;
+    display:none;
  
 }
 .footer{
     grid-area: footer;
+    text-align: center;
 }
 @media (min-width: 576px){
     #outer-container {
