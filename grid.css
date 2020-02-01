@@ -1,7 +1,6 @@
-* {
+{
     box-sizing: border-box;
 }
-
 #outer-container {
 display:grid;
 border-color: white;
@@ -14,7 +13,6 @@ height: 95vh;
 font-family: 'Montserrat', sans-serif;
 grid-template-areas:
 "header"
-"header"
 "hero"
 "advert"
 "content"
@@ -23,12 +21,12 @@ grid-template-areas:
 }
 #inner-grid{
         display:grid;
-        grid-template-rows: 100px 100px 1fr;
+        grid-template-rows: 100px 50px 1fr;
         grid-gap: 5px;
         grid-template-areas:
-        "article_feat article_feat article_feat"
-        "adv adv adv"
-        "article_list article_list article_list";
+        "article_feat"
+        "adv"
+        "article_list";
     }
 .header{
     grid-area: header;
@@ -40,11 +38,7 @@ h1{
     color:white;
     text-align: center;
 }  
-.second_row{
-    display:block;
-    display:flex;
-    justify-content:space-between;
-}
+
 .nav {
     font-size:10px;
     text-transform:uppercase;
@@ -87,7 +81,7 @@ button{
    grid-area: article_feat;
    background-color: rgba(252, 184, 106, 0.836);
 }
-.adv{
+ .adv{
   grid-area: adv;
   background-color: rgba(252, 184, 106, 0.836);
 }
@@ -146,10 +140,37 @@ button{
     display:block;
     color: darkred;
     background-color: rgba(252, 184, 106, 0.836);
-
 }
+.book_adv{
+    width: 30%;  
+}
+.side{
+    text-decoration: none;  
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+      }
+      
+li a {
+        display: block;
+        color: #000;
+        padding: 4px 8px;
+        text-decoration: none;
+      }    
+li {
+        text-align: center;
+        border-bottom: 1px solid #555;
+      }
+      
+li a:hover {
+        background-color: #555;
+        color: white;
+      }
 #inner-grid{ 
-    grid-template-rows: 1fr;
+    grid-template-rows: 2fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "article_feat article_list";   
