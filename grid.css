@@ -30,10 +30,11 @@ h1{
     text-align: center;
 }  
 .header_row{
-    
+    display:flex;
+    justify-content:space-between; 
 }
 .nav {
-    font-size:10px;
+    font-size:20px;
     text-transform:uppercase;
     vertical-align:bottom;
  }
@@ -46,9 +47,23 @@ h1{
     .nav_link:hover{
       color: #990000;
     }
-    .tools{
-        align-self:end;
-    }
+    .join{
+        display: inline-block;
+        color: #990000;
+        text-transform:uppercase;
+        font-weight: 700;
+        font-size: 16px;
+        text-decoration: none;
+        user-select: none;
+        padding: 16px 20px;
+        outline: none;
+        border: 3px solid;
+        border-radius: 1px;
+        transition: 0.2s;
+      } 
+      a.join:hover { background: rgba(75, 74, 74, 0.2); }
+      a.join:active { background: white; }
+
 .hero{
     grid-area: hero;
     text-transform:uppercase;
@@ -69,6 +84,24 @@ h1{
 
 button{
     border-radius:10px ;
+}
+.hero-action{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform:uppercase;
+    padding: 16px 20px;
+    background-color: #000;
+    box-shadow: rgba(0,0,0,.3) 0 2px 5px;
+  } 
+  a.hero-action:active {
+    top: 1px;
+    box-shadow: none;
+  }
+  a.hero-action:hover {
+    transition: .5s linear;
+    
+
 }
 .content{
     grid-area: content;
