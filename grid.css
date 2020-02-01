@@ -5,11 +5,11 @@
 #outer-container {
 display:grid;
 border-color: white;
-grid-template-rows: 1fr 1fr 1fr 3fr 1fr 1fr 30px;
+grid-template-rows: 1fr 1fr 1fr 3fr 1fr 1fr 1fr;
 grid-template-columns: 1fr;
 grid-gap: 5px;
 height: 95vh;
-background-image:url(images/photo18.jpg);
+/*background-image:url(images/photo18.jpg);-*/
  background-size: cover;
 font-family: 'Montserrat', sans-serif;
 grid-template-areas:
@@ -23,8 +23,7 @@ grid-template-areas:
 }
 #inner-grid{
         display:grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        height: 45vh;
+        grid-template-rows: 100px 100px 1fr;
         grid-gap: 5px;
         grid-template-areas:
         "article_feat article_feat article_feat"
@@ -45,7 +44,6 @@ h1{
     display:block;
     display:flex;
     justify-content:space-between;
-    background-color: rgba(252, 184, 106, 0.836);
 }
 .nav {
     font-size:10px;
@@ -82,25 +80,19 @@ button{
 }
 .content{
     grid-area: content;
-    height: 45vh;
     color:white;
-    text-align: center;
-    
+    text-align: center;   
 }
-
 .article_feat{
    grid-area: article_feat;
-   height: 45vh;
    background-color: rgba(252, 184, 106, 0.836);
 }
 .adv{
   grid-area: adv;
-  height: 45vh;
   background-color: rgba(252, 184, 106, 0.836);
 }
 .article_list{
  grid-area:article_list;
- height: 45vh;
  background-color: rgba(252, 184, 106, 0.836);
 }
 .sidebar{
@@ -116,7 +108,7 @@ button{
 @media (min-width: 576px){
     #outer-container {
         grid-template-columns: 100px 1fr 100px;
-        grid-template-rows: 1fr 70px 2fr 30px 30px;
+        grid-template-rows: 1fr 1fr 2fr 50px 1fr;
         background-image: none;
                grid-template-areas:
 "header header header"
@@ -127,11 +119,10 @@ button{
 }
 .sidebar{
     display:inline-flex;
-    height: 8vh;
     background-color: rgba(252, 184, 106, 0.836);
 }
 #inner-grid{  
-        height: 40vh;
+        grid-template-rows: 150px 1fr;
         grid-template-areas:
         "article_feat article_feat adv"
         "article_list article_list article_list";
@@ -160,8 +151,7 @@ button{
 #inner-grid{ 
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-        height: 40vh;
-        grid-template-areas:
+    grid-template-areas:
         "article_feat article_list";   
     }
     .adv{display:none;
