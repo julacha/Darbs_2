@@ -16,18 +16,10 @@ grid-template-areas:
 "hero"
 "advert"
 "content"
+"sidebar_row"
 "sidebar"
 "footer"
 }
-#inner-grid{
-        display:grid;
-        grid-template-rows: 100px 50px 1fr;
-        grid-gap: 5px;
-        grid-template-areas:
-        "article_feat"
-        "adv"
-        "article_list";
-    }
 .header{
     grid-area: header;
     background-color: rgba(252, 184, 106, 0.836);
@@ -77,9 +69,18 @@ button{
     color:white;
     text-align: center;   
 }
+#inner-grid{
+    display:grid;
+    grid-template-rows: 100px 50px 1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+    "article_feat"
+    "adv"
+    "article_list";
+}
 .article_feat{
    grid-area: article_feat;
-   background-color: rgba(252, 184, 106, 0.836);
+   background-image: url(images/book_adv5.PNG);
 }
  .adv{
   grid-area: adv;
@@ -89,11 +90,15 @@ button{
  grid-area:article_list;
  background-color: rgba(252, 184, 106, 0.836);
 }
-.sidebar{
-    grid-area: sidebar;
+.sidebar_row{
+    grid-area: sidebar_row;
     display:none;
     background-color: rgba(252, 184, 106, 0.836);
 }
+.sidebar{
+    grid-area: sidebar;
+    display:none;
+    background-color: rgba(252, 184, 106, 0.836);}
 .footer{
     grid-area: footer;
     text-align: center;
@@ -104,14 +109,14 @@ button{
         grid-template-columns: 100px 1fr 100px;
         grid-template-rows: 1fr 1fr 2fr 50px 1fr;
         background-image: none;
-               grid-template-areas:
+        grid-template-areas:
 "header header header"
 "hero hero hero"
 "content content content"
-"sidebar sidebar sidebar"
+"sidebar_row sidebar_row sidebar_row"
 "footer footer footer";
 }
-.sidebar{
+.sidebar_row{
     display:inline-flex;
     background-color: rgba(252, 184, 106, 0.836);
 }
@@ -121,7 +126,7 @@ button{
         "article_feat article_feat adv"
         "article_list article_list article_list";
     }
-}
+ }
 @media (min-width: 992px){
     #outer-container {
         grid-template-columns: 150px 1fr 1fr 150px;
@@ -133,8 +138,12 @@ button{
 "footer footer footer footer";
 }
 .sidebar{
+    display:block;
     color: rgb(223, 202, 202);
     background-color: rgba(252, 184, 106, 0.836);
+}
+.sidebar_row {
+    display:none;
 }
 .advert{
     display:block;
@@ -144,37 +153,33 @@ button{
 .book_adv{
     width: 30%;  
 }
-.side{
-    text-decoration: none;  
-}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-decoration: none;
       }
-      
+li {
+        text-align: center;
+        border-bottom: 1px solid #555;
+      }    
 li a {
         display: block;
         color: #000;
         padding: 4px 8px;
         text-decoration: none;
       }    
-li {
-        text-align: center;
-        border-bottom: 1px solid #555;
-      }
-      
 li a:hover {
         background-color: #555;
         color: white;
       }
 #inner-grid{ 
-    grid-template-rows: 2fr;
+    grid-template-rows: 60vh;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "article_feat article_list";   
     }
+ 
     .adv{display:none;
     }
-}
+    }
