@@ -1,4 +1,4 @@
-{
+*{
     box-sizing: border-box;
 }
 #outer-container {
@@ -21,16 +21,17 @@ grid-template-areas:
 "footer"
 }
 .header{
-    grid-area: header;
-    background-color: rgba(252, 184, 106, 0.836);
+    grid-area: header; 
+    background-color:#fcb86a;
 }
 h1{
-    font-size: 18px;
     text-transform:uppercase;
     color:white;
     text-align: center;
 }  
-
+.header_row{
+    
+}
 .nav {
     font-size:10px;
     text-transform:uppercase;
@@ -53,14 +54,19 @@ h1{
     text-transform:uppercase;
     color:white;
     width:700;
-    text-align: center;
-    background-color: rgba(252, 184, 106, 0.836);
+    display:flex;
+    align-items: center;
+    justify-content: stretch;
+    justify-content:space-between;
+    background-color: #a78565c7;
+
 }
 .advert{
     grid-area: advert;
     display:none;
     background-color: rgba(252, 184, 106, 0.836);
 }
+
 button{
     border-radius:10px ;
 }
@@ -81,14 +87,24 @@ button{
 .article_feat{
    grid-area: article_feat;
    background-image: url(images/book_adv5.PNG);
-}
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
  .adv{
   grid-area: adv;
-  background-color: rgba(252, 184, 106, 0.836);
+  background-image: url(images/adv2.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .article_list{
  grid-area:article_list;
  background-color: rgba(252, 184, 106, 0.836);
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ color: rgb(2, 2, 109);
+ font-size: 18px;
 }
 .sidebar_row{
     grid-area: sidebar_row;
@@ -130,7 +146,7 @@ button{
 @media (min-width: 992px){
     #outer-container {
         grid-template-columns: 150px 1fr 1fr 150px;
-        grid-template-rows: 1fr 1fr 2fr 30px;
+        grid-template-rows: 1fr 60px 2fr 30px;
         grid-template-areas:
 "header header header header"
 "hero hero hero advert"
@@ -147,8 +163,9 @@ button{
 }
 .advert{
     display:block;
-    color: darkred;
-    background-color: rgba(252, 184, 106, 0.836);
+    background-image: url(images/adv5.PNG);
+    background-size: cover;
+
 }
 .book_adv{
     width: 30%;  
