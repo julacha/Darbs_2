@@ -36,8 +36,29 @@ h1{
     color:white;
     text-align: center;
     font-size: 45px;
-    width: 1000;
+    font-weight:1000;
+
 }  
+.davana{
+    background-color: red;
+    height: 50px;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px px;
+    cursor: pointer;
+    font-size: 20px;
+    animation-duration: 7s;
+    animation-name: davana;
+}
+@keyframes davana {
+    20% {
+        background-color: blue;
+    100% }
+    { background-color: yellow;
+  }
+} 
 .header_second{
     display:flex;
     justify-content:space-between; 
@@ -80,7 +101,7 @@ h1{
 
 }
 h3{
-    width: 700;
+    font-weight: 700;
     font-size: 35px;
     padding:15px;
 }
@@ -135,20 +156,33 @@ h3{
 }
 .article_list{
  grid-area:article_list;
- background-color: rgb(252, 196, 131);
- display:flex;
+ background-color:  #ffdab3;
+ display:flexbox;
  flex-direction:column;
+ justify-content: center;
+ align-items: center;
  font-size: 18px;
+ color: black;
+ padding: 25px;
 }
 p.border {
 border-style:solid;
 border-width:3px;
-border-color: #555;
-padding: 1px;
+border-color: #a78565c7;
+padding-top: 15px;
+padding-bottom: 15px;
 }
-.action{
-    border:2px solid #555;
-    padding:  25px 0;
+.search{
+    background-color: #a78565c7;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10px;
 }
 
 .sidebar_row{
@@ -164,8 +198,9 @@ padding: 1px;
     grid-area: footer;
   align-items: center;
   display: flex;
+  justify-content: flex-end;
 font-size: 12px;
-    background-color: rgba(252, 184, 106, 0.836);
+    background-color:  #a78565c7;
 }
 @media (min-width: 576px){
     #outer-container {
@@ -180,8 +215,20 @@ font-size: 12px;
 "footer footer footer";
 }
 .sidebar_row{
-    display:inline-flex;
+    display: flex;
     background-color: rgba(252, 184, 106, 0.836);
+}
+.items{
+    display:flex;
+    justify-content: center;
+ text-align: center;
+    }
+.stat_item {
+    width: 160px;
+border-right: 2px solid white;
+}
+.stat_item:last-child{
+    border-right: 2px solid white;
 }
 #inner-grid{  
         grid-template-rows: 150px 1fr;
@@ -214,9 +261,7 @@ font-size: 12px;
     background-size: cover;
 
 }
-.book_adv{
-    width: 30%;  
-}
+
 ul {
     list-style-type: none;
     margin: 0;
