@@ -23,15 +23,25 @@ grid-template-areas:
 .header{
     grid-area: header; 
     background-color:#fcb86a;
+    background-image: url(images/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+.header_first{
+    display: flex;
+    justify-content:space-between; 
 }
 h1{
     text-transform:uppercase;
     color:white;
     text-align: center;
+    font-size: 40px;
+    width: 900;
 }  
-.header_row{
+.header_second{
     display:flex;
     justify-content:space-between; 
+    align-items: center;
 }
 .nav {
     font-size:20px;
@@ -46,13 +56,14 @@ h1{
     }
     .nav_link:hover{
       color: #990000;
+      background-color:#555;
     }
     .join{
         display: inline-block;
-        color: #990000;
+        color:white;
         text-transform:uppercase;
         font-weight: 700;
-        font-size: 16px;
+        font-weight: bold;
         text-decoration: none;
         user-select: none;
         padding: 16px 20px;
@@ -60,21 +71,27 @@ h1{
         border: 3px solid;
         border-radius: 1px;
         transition: 0.2s;
+        border-radius:10px ;
+        background-color: #000;
+        box-shadow: rgba(0,0,0,.3) 0 2px 5px;
       } 
       a.join:hover { background: rgba(75, 74, 74, 0.2); }
-      a.join:active { background: white; }
+      a.join:active { background: white; } 
 
 .hero{
     grid-area: hero;
     text-transform:uppercase;
     color:white;
-    width:700;
     display:flex;
     align-items: center;
-    justify-content: stretch;
-    justify-content:space-between;
+    justify-content:center;
     background-color: #a78565c7;
 
+}
+h3{
+    width: 700;
+    font-size: 35px;
+    padding:15px;
 }
 .advert{
     grid-area: advert;
@@ -82,9 +99,6 @@ h1{
     background-color: rgba(252, 184, 106, 0.836);
 }
 
-button{
-    border-radius:10px ;
-}
 .hero-action{
     color: white;
     font-weight: bold;
@@ -92,6 +106,7 @@ button{
     text-transform:uppercase;
     padding: 16px 20px;
     background-color: #000;
+    border-radius:10px ;
     box-shadow: rgba(0,0,0,.3) 0 2px 5px;
   } 
   a.hero-action:active {
@@ -139,6 +154,12 @@ button{
  color: rgb(2, 2, 109);
  font-size: 18px;
 }
+p.border {
+border-style:solid;
+border-width:3px;
+border-color: #555;
+padding: 10px;
+}
 .sidebar_row{
     grid-area: sidebar_row;
     display:none;
@@ -150,7 +171,9 @@ button{
     background-color: rgba(252, 184, 106, 0.836);}
 .footer{
     grid-area: footer;
-    text-align: center;
+  align-items: center;
+  display: flex;
+font-size: 12px;
     background-color: rgba(252, 184, 106, 0.836);
 }
 @media (min-width: 576px){
