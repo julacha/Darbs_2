@@ -35,8 +35,8 @@ h1{
     text-transform:uppercase;
     color:white;
     text-align: center;
-    font-size: 40px;
-    width: 900;
+    font-size: 45px;
+    width: 1000;
 }  
 .header_second{
     display:flex;
@@ -59,25 +59,16 @@ h1{
       background-color:#555;
     }
     .join{
-        display: inline-block;
-        color:white;
-        text-transform:uppercase;
-        font-weight: 700;
+        color: white;
         font-weight: bold;
         text-decoration: none;
-        user-select: none;
+        text-transform:uppercase;
         padding: 16px 20px;
-        outline: none;
-        border: 3px solid;
-        border-radius: 1px;
-        transition: 0.2s;
-        border-radius:10px ;
         background-color: #000;
+        border-radius:10px ;
         box-shadow: rgba(0,0,0,.3) 0 2px 5px;
+        cursor: pointer;
       } 
-      a.join:hover { background: rgba(75, 74, 74, 0.2); }
-      a.join:active { background: white; } 
-
 .hero{
     grid-area: hero;
     text-transform:uppercase;
@@ -108,10 +99,7 @@ h3{
     background-color: #000;
     border-radius:10px ;
     box-shadow: rgba(0,0,0,.3) 0 2px 5px;
-  } 
-  a.hero-action:active {
-    top: 1px;
-    box-shadow: none;
+    cursor: pointer;
   }
   a.hero-action:hover {
     transition: .5s linear;
@@ -147,19 +135,22 @@ h3{
 }
 .article_list{
  grid-area:article_list;
- background-color: rgba(252, 184, 106, 0.836);
+ background-color: rgb(252, 196, 131);
  display:flex;
- align-items:center;
- justify-content:center;
- color: rgb(2, 2, 109);
+ flex-direction:column;
  font-size: 18px;
 }
 p.border {
 border-style:solid;
 border-width:3px;
 border-color: #555;
-padding: 10px;
+padding: 1px;
 }
+.action{
+    border:2px solid #555;
+    padding:  25px 0;
+}
+
 .sidebar_row{
     grid-area: sidebar_row;
     display:none;
