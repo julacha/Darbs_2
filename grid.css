@@ -220,11 +220,13 @@ font-size: 12px;
 }
 .items{
     display:flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     }
 .stat_item {
-width: 160px;
+width: auto;
+flex-basis:auto;
 border-right: 2px solid white;
 justify-content: center;
 }
