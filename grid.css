@@ -150,7 +150,7 @@ h3{
 
  .adv{
   grid-area: adv;
-  background-image: url(images/adv2.PNG);
+  background-image: url(images/adv2.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
