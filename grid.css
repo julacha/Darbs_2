@@ -239,6 +239,13 @@ justify-content: center;
         "article_feat article_feat adv"
         "article_list article_list article_list";
     }
+    .adv{
+        grid-area: adv;
+        background-image: url(images/adv2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    
  }
 @media (min-width: 992px){
     #outer-container {
