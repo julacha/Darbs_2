@@ -143,7 +143,7 @@ h3{
 }
 .article_feat{
    grid-area: article_feat;
-   background-image: url(images/book_adv5.PNG);
+   background-image: url(images/book_adv2.jpg);
    background-size: cover;
    background-repeat: no-repeat;
  }
@@ -260,7 +260,7 @@ justify-content: center;
 }
 .advert{
     display:block;
-    background-image: url(images/book_adv2.jpg);
+    background-image: url(images/adv5.PNG);
     background-size: cover;
 
 }
